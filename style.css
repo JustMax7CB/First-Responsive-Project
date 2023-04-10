@@ -343,6 +343,10 @@ footer .rights {
     display: none;
   }
 
+  footer .divider {
+    display: none;
+  }
+
   footer .rights {
     display: block;
     text-align: center;
