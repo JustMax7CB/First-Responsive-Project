@@ -1,0 +1,351 @@
+* {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+body span {
+  width: 100%;
+  height: 3.5em;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+
+body span h3 {
+  margin: 0 5px;
+  font-size: 30px;
+}
+
+body span h3:first-child {
+  color: rgb(100, 100, 100);
+  font-weight: 400;
+}
+
+body span h3:last-child {
+  color: rgb(90, 90, 90);
+  font-weight: 700;
+}
+
+.top-container {
+  background-image: url("assets/images/bgImage1.jpg");
+  background-size: cover;
+  height: 550px;
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.phone-call-btn {
+  display: none;
+}
+
+.text-container {
+  width: 50%;
+}
+
+.text-container hr {
+  display: none;
+}
+
+.text-container .heading {
+  width: 50%;
+}
+
+.text-container .subtitle {
+  padding-bottom: 25px;
+  width: 50%;
+}
+
+.text-container p {
+  width: 75%;
+}
+
+.form-container {
+  margin-right: 60px;
+  height: 70%;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-input * {
+  margin: 2px 0;
+}
+
+.form-container .form-input {
+  width: 100%;
+  padding: 5px 30px;
+}
+
+.form-input input {
+  width: 17em;
+  height: 2.2em;
+}
+
+.form-container button {
+  width: calc(100% - 60px);
+  height: 50px;
+  background: radial-gradient(100% 100% at 100% 0%, #89e5ff 0%, #5468ff 100%);
+  color: white;
+  text-transform: uppercase;
+  font-size: 22px;
+  margin: 5px;
+  outline: 0;
+  border: 1px solid #273074;
+  border-radius: 0.3em;
+  cursor: pointer;
+  text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+  will-change: box-shadow, transform;
+  box-shadow: 0px 0.01em 0.01em rgb(45 35 66 / 40%),
+    0px 0.3em 0.7em -0.01em rgb(45 35 66 / 30%),
+    inset 0px -0.01em 0px rgb(58 65 111 / 50%);
+}
+
+.form-container button:hover,
+.phone-call-btn:hover {
+  box-shadow: 0px 0.1em 0.2em rgb(45 35 66 / 40%),
+    0px 0.4em 0.7em -0.1em rgb(45 35 66 / 30%), inset 0px -0.1em 0px #3c4fe0;
+  transform: translateY(-0.1em);
+}
+
+.form-container button:active,
+.phone-call-btn:active {
+  box-shadow: inset 0px 0.1em 0.6em #3c4fe0;
+  transform: translateY(0em);
+}
+
+.form-container a {
+  font-size: 10px;
+}
+
+.center-container {
+  display: flex;
+  height: 400px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.icon-text-item {
+  width: 300px;
+  height: 20em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+.item-icon,
+.item-icon object {
+  width: auto;
+  height: 60px;
+}
+
+.bottom-container {
+  width: 100%;
+  height: 400px;
+  background-image: url("assets/images/bottomBgImage.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-container .divider {
+  width: 100px;
+  border: 1px solid rgba(3, 3, 3, 0.568);
+  margin: 10px 0;
+}
+
+.avatar {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.avatar img {
+  border-radius: 50px;
+  border: 1px solid rgba(34, 34, 34, 0.781);
+  object-fit: cover;
+  object-position: top;
+  width: 100%;
+  height: 100%;
+}
+
+.bottom-container p {
+  text-align: center;
+  width: 30%;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+footer a {
+  margin: 0 5px;
+  text-decoration: none;
+  color: #303030;
+}
+
+footer .rights {
+  display: none;
+}
+
+@media only screen and (max-width: 420px) {
+  body span {
+    justify-content: center;
+  }
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .top-container {
+    flex-direction: column;
+    justify-content: center;
+    height: 1000px;
+    margin: 10px 0;
+  }
+
+  .text-container {
+    padding-top: 20px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text-container hr {
+    display: block;
+    border: 1px solid rgb(255, 255, 255);
+    color: white;
+    width: 90%;
+  }
+
+  .text-container .heading {
+    text-align: center;
+    font-size: 20px;
+    width: 60%;
+  }
+
+  .text-container .subtitle {
+    text-align: center;
+    font-size: 14px;
+    width: 60%;
+  }
+
+  .text-container p {
+    font-size: 12px;
+    width: 90%;
+  }
+
+  .phone-call-btn {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    background: radial-gradient(100% 100% at 100% 0%, #89e5ff 0%, #5468ff 100%);
+    color: white;
+    font-size: 20px;
+    margin-bottom: 25px 0;
+    outline: 0;
+    border: 1px solid #273074;
+    border-radius: 0.3em;
+    cursor: pointer;
+    text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+    will-change: box-shadow, transform;
+    box-shadow: 0px 0.01em 0.01em rgb(45 35 66 / 40%),
+      0px 0.3em 0.7em -0.01em rgb(45 35 66 / 30%),
+      inset 0px -0.01em 0px rgb(58 65 111 / 50%);
+  }
+
+  .phone-call-btn > * {
+    margin: 0 10px;
+  }
+
+  .form-container {
+    margin: 30px 0;
+    height: 40%;
+  }
+
+  .center-container {
+    height: 30%;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icon-text-item {
+    width: 300px;
+    height: 18em;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
+  }
+
+  .bottom-container {
+    width: 100%;
+    height: 300px;
+    background-image: url("assets/images/bottomBgImage.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+  }
+
+  .bottom-container p {
+    text-align: center;
+    width: 90%;
+  }
+
+  .bottom-container .divider {
+    display: none;
+  }
+
+  footer a {
+    display: none;
+  }
+
+  footer .rights {
+    display: block;
+    text-align: center;
+    font-size: 15px;
+  }
+}
