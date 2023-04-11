@@ -43,6 +43,8 @@ body span h3:last-child {
 
 .text-container {
   width: 50%;
+  height: 70%;
+  overflow: hidden;
 }
 
 .text-container hr {
@@ -59,6 +61,7 @@ body span h3:last-child {
 }
 
 .text-container p {
+  height: 30%;
   width: 75%;
 }
 
@@ -217,7 +220,10 @@ footer .rights {
   display: none;
 }
 
-@media only screen and (max-width: 420px) {
+
+@media only screen and (max-width: 800px) {
+ 
+
   body span {
     justify-content: center;
   }
