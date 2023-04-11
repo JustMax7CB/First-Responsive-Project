@@ -43,8 +43,8 @@ body span h3:last-child {
 
 .text-container {
   width: 50%;
-  height: 70%;
-  overflow: hidden;
+  margin-left: 50px;
+
 }
 
 .text-container hr {
@@ -61,8 +61,7 @@ body span h3:last-child {
 }
 
 .text-container p {
-  height: 30%;
-  width: 75%;
+  width: 90%;
 }
 
 .form-container {
@@ -220,10 +219,7 @@ footer .rights {
   display: none;
 }
 
-
 @media only screen and (max-width: 800px) {
- 
-
   body span {
     justify-content: center;
   }
@@ -248,6 +244,7 @@ footer .rights {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left: 0;
   }
 
   .text-container hr {
@@ -357,4 +354,5 @@ footer .rights {
     text-align: center;
     font-size: 15px;
   }
+
 }
